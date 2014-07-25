@@ -101,6 +101,25 @@ repeat until<(x position) < [280] >
 change x by (2) 
 
 Step 5: We want a goal for our character to reach after jumping on the series of logs, so we need to create a item / place
-for our character tio reach. You can create your own area / object for your character to reach or follow these instructions 
+for our character to reach. You can create your own area / object for your character to reach or follow these instructions 
 to make a lillypad. 
+
+1.First make a new sprite, and go into the edit/draw window
+2.Draw a circle in a green colour, making sure the colour is filled in on the circle.
+3.Cut a triangle out of the Circle, to make a lillypad
+4.Name your sprite 'LillyPad' 
+
+Now we have designed our goal, lets add some programming to finish the game.
+
+1. Add this script to your main / controlled character:
+
+when flag clicked 
+forever 
+if <touching [LillyPad v]
+Say[Yay I made it!] 
+wait(1) secs
+stop[all v]
+
+
+
 
