@@ -111,7 +111,12 @@ to make a lillypad.
 
 Now we have designed our goal, lets add some programming to finish the game.
 
-1. Add this script to your main / controlled character:
+Add this short script to your new goal, Lillypad:
+when flag clicked 
+go to x:(-15) y:(140)
+
+
+Add this script to your main / controlled character:
 
 when flag clicked 
 forever 
