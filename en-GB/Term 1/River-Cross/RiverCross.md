@@ -81,75 +81,93 @@ __Click the green flag__,Does your character move forward , back , left and righ
 + On your character script page, find the script that moves your character backwards, change the touching colour to the floor colour   your character starts on. 
 + Lastly add some waves on to your background. 
 
-Step 4: Programming the logs 
+#**Step 4:** Programming the logs {.activity} 
 
-1. Now we are going to programme the logs which your character will be hopping on to cross the river. On Log 1's script page make this script:
++ Now we are going to programme the logs which your character will be hopping on to cross the river. On Log 1's script page make this script:
 
+```blocks
 when flag clicked  
-go to x:(0)y:(-75)
-repeat until < (x position) > (280) >
-change  x  by(2)
-end
-forever
-go to x:(-300)y:(-75)
-repeat until< (x position) > (280) >
-change  x  by (2)
+  go to x:(0)y:(-75)
+  repeat until < (x position) > (280) >
+  change  x  by(2)
+  end
+  forever
+  go to x:(-300)y:(-75)
+  repeat until< (x position) > (280) >
+  change  x  by (2)
+  end
+```
 
-2. Also make this script for Log 2 
++ Also make this script for Log 2 
 Test your project: Does Log 1 and 2 both move in a 'right' direction. 
 
-3. Now make this script for Logs 3 and 4 : 
++ Now make this script for Logs 3 and 4 : 
 
+```blocks
 when flag clicked 
-go to x:(132) y:(2)
-repeat until < (x position) < [-280] >
-change x by (-2)
-end 
-forever
-go to x: (137) y:(2)
-repeat until<(x position) < [-280] >
-change x by (-2) 
+  go to x:(132) y:(2)
+  repeat until < (x position) < [-280] >
+  change x by (-2)
+  end 
+  forever
+  go to x: (137) y:(2)
+  repeat until<(x position) < [-280] >
+  change x by (-2) 
+  end
+```
 
-Check that your logs 3 and 4 are moving in the left direction.
+*Check that your logs 3 and 4 are moving in the left direction.*
 
-4. Finally make this script for logs 5 and 6:
++ Finally make this script for logs 5 and 6:
 
+```blocks
 when flag clicked 
-go to x:(15) y:(87)
-repeat until < (x position) < [280] >
-change x by (2)
-end 
-forever
-go to x: (15) y:(87)
-repeat until<(x position) < [280] >
-change x by (2) 
+  go to x:(15) y:(87)
+  repeat until < (x position) < [280] >
+  change x by (2)
+  end 
+  forever
+  go to x: (15) y:(87)
+  repeat until<(x position) < [280] >
+  change x by (2) 
+  end
+```
+## Save your project { .save}
 
-Step 5: We want a goal for our character to reach after jumping on the series of logs, so we need to create a item / place
+#**Step 5:** Goal {.activity}
+* We want a goal for our character to reach after jumping on the series of logs, so we need to create a item / place
 for our character to reach. You can create your own area / object for your character to reach or follow these instructions 
-to make a lillypad. 
+to make a lillypad.*
 
-1.First make a new sprite, and go into the edit/draw window
-2.Draw a circle in a green colour, making sure the colour is filled in on the circle.
-3.Cut a triangle out of the Circle, to make a lillypad
-4.Name your sprite 'LillyPad' 
++ First make a new sprite, and go into the edit/draw window
++ Draw a circle in a green colour, making sure the colour is filled in on the circle.
++ Cut a triangle out of the Circle, to make a lillypad
++ Name your sprite 'LillyPad' 
 
-Now we have designed our goal, lets add some programming to finish the game.
+*Now we have designed our goal, lets add some programming to finish the game.*
 
-Add this short script to your new goal, Lillypad:
++Add this short script to your new goal, Lillypad:
+
+```blocks
 when flag clicked 
-go to x:(-15) y:(140)
+  go to x:(-15) y:(140)
+  end
+```
 
++ Add this script to your main / controlled character:
 
-Add this script to your main / controlled character:
-
+```blocks
 when flag clicked 
-forever 
-if <touching [LillyPad v]
-Say[Yay I made it!] 
-wait(1) secs
-stop[all v]
+  forever 
+  if <touching [LillyPad v]
+  Say[Yay I made it!] 
+  wait(1) secs
+  stop[all v]
+  end
+```
 
-Check your project: Does the game work? Do you win win you achieve your goal? As a challenge why not add a score to your game?
+## Test Your Project { .flag}
+Does the game work? Do you win win you achieve your goal? As a challenge why not add a score to your game?
 
 
 
