@@ -125,6 +125,7 @@ Say[Yay I made it!]
 wait(1) secs
 stop[all v]
 
+Check your project: Does the game work? Do you win win you achieve your goal? As a challenge why not add a score to your game?
 
 
 
