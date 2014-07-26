@@ -1,61 +1,85 @@
-Code Club : How to make a river crossing game project By
+---
+title: River Cross
+level: Level 2
+language: en-GB
+stylesheet: scratch
+embeds: "*.png"
+materials: "*.sb2"
+...
 
-Emily Harding 
-
-Introduction: In this project we are going to make a game similar to the classic game 
-
+# Introduction {.intro}
+__In this project we are going to make a game similar to the classic game__
 Frogger, your character will jump onto a series of logs to win. 
 
-Step 1 : Create your character and logs
+#**Step 1:** Create your character and logs {.activity} 
 
-1. Start a new project
+## Activity Checklist { .check}
 
-2.  First delete the Scratch cat , and import / draw a character.  If you want it to be a classic Frogger style game you can       use a Frog. 
-
-3.  Import / draw your own background. This will be the background which your 
-    character will fall into if they miss the log. 
-
-4. Draw 6 rectangles, these will be the ‘logs’ which your character will be hopping on. 
-   Make one log then duplicate the rectangle's 5 times. Give each log a name , Log 1 , Log 2 etc.
++ Start a new project
++ First delete the Scratch cat , and import / draw a character.  If you want it to be a classic Frogger style game you     can use a Frog. 
++ Import / draw your own background. This will be the background which your 
+  character will fall into if they miss the log. 
++ Draw 6 rectangles, these will be the ‘logs’ which your character will be hopping on. 
+  Make one log then duplicate the rectangle's 5 times. Give each log a name , Log 1 , Log 2 etc.
  
 
-Step 2 : Making the frog move 
+#**Step 2:** Making the frog move {.activity}
 
-1. We want the character to be controlled by the arrow keys to move. Use this 
+*Next, we want our character to move when we press the arrow keys.*
+
+##Activity Checklist { .check}
+
++ We want the character to be controlled by the arrow keys to move. Use this 
    script to make the character move to the left: 
 
+```blocks
 When [left arrow v] key pressed 
-Change x by (-10)
+    Change x by (-10)
+    end
+```
++ Now you can use this script to make the character move to the right: 
 
-2. Now you can use this script to make the character move to the right: 
-
+```blocks
 When [right arrow v] key pressed 
-Change x by (10)
+    Change x by (10)
+    end
+```
 
-3. We also want the character to jump forward,onto the logs, so use this script:
++ We also want the character to jump forward,onto the logs, so use this script:
 
+```blocks
 When[space v] key pressed 
-play sound [Pop 1 v]
-move (75) steps 
+    play sound [Pop 1 v]
+    move (75) steps 
+    end
+```
 
-You can use any sound effect when your character jumps!
+* You can use any sound effect when your character jumps!*
 
-4. Finally use this script so your character can move backwards: 
++ Finally use this script so your character can move backwards: 
 
+```blocks
 When [down arrow v]key pressed 
-if <not <touching color [#00ff00] > > then
-move (-75) steps 
+    if <not <touching color [#00ff00] > > then
+    move (-75) steps 
+    end
+```
 
 The green colour can be replaced with the colour floor your character starts the game on. 
 
-Test your project! Does your character move forward , back , left and right?
+## Test Your Project { .flag}
+__Click the green flag__,Does your character move forward , back , left and right?
 
-Step 3 : Create your background
+## Save your project { .save}
 
-1. Our character need a background when they are jumping on the logs , start by using the paint fill tool to colour the whole background , you can use any colour you want. 
-2. Use the rectangle shape tool, to draw the land your character, and fill the rectangle in. 
-3. On your character script page, find the script that moves your character backwards, change the touching colour to the floor colour your character starts on. 
-4. Lastly add some waves on to your background. 
+#**Step 3:** Create your background  {.activity}
+
+##Activity Checklist { .check}
+
++ Our character need a background when they are jumping on the logs , start by using the paint fill tool to colour the whole           background , you can use any colour you want. 
++ Use the rectangle shape tool, to draw the land your character, and fill the rectangle in. 
++ On your character script page, find the script that moves your character backwards, change the touching colour to the floor colour   your character starts on. 
++ Lastly add some waves on to your background. 
 
 Step 4: Programming the logs 
 
